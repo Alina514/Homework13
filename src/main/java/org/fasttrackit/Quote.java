@@ -5,16 +5,16 @@ import jdk.jfr.DataAmount;
 @DataAmount
 
 public class Quote {
-    private int id;
-    private String author;
-    private String quote;
+    private final int id;
+    private final String author;
+    private final String quote;
     private Boolean favourite;
 
     public Quote(int id, String author, String quote, boolean favourite) {
         this.id = id;
         this.author = author;
         this.quote = quote;
-        this.favourite = Boolean.valueOf(favourite);
+        this.favourite = favourite;
 
     }
 
